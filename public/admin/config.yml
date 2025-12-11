@@ -1,21 +1,8 @@
 backend:
-  name: git-gateway # Requires authentication setup (see deployment step)
+  name: git-gateway
   branch: main
-  roles:
-    - name: editor # Full access role
-      capabilities:
-        - create
-        - read
-        - update
-        - delete
-        - publish # Allows publishing drafts
-        - media # Allows uploading/deleting images
-
-    - name: author # Limited role (e.g., for contributors)
-      capabilities:
-        - create
-        - read
-        - update
+  accept_roles:
+    - admin # Only users with the "admin" role in Netlify Identity can log in
 
 media_folder: "public/images" # Where uploaded images are stored
 public_folder: "/images" # Public URL path for images
