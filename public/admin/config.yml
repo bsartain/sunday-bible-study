@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway # Requires authentication setup (see deployment step)
+  branch: main
+
+media_folder: "public/images" # Where uploaded images are stored
+public_folder: "/images" # Public URL path for images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Cats Page"
+        name: "cats"
+        file: "content/cats.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - label: "Cats"
+            name: "cats"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
