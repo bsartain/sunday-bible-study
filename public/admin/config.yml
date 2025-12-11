@@ -1,6 +1,21 @@
 backend:
   name: git-gateway # Requires authentication setup (see deployment step)
   branch: main
+  roles:
+    - name: editor # Full access role
+      capabilities:
+        - create
+        - read
+        - update
+        - delete
+        - publish # Allows publishing drafts
+        - media # Allows uploading/deleting images
+
+    - name: author # Limited role (e.g., for contributors)
+      capabilities:
+        - create
+        - read
+        - update
 
 media_folder: "public/images" # Where uploaded images are stored
 public_folder: "/images" # Public URL path for images
