@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Optional: Link to config.yml explicitly if not in /admin/ -->
+    <!-- <link href="config.yml" type="text/yaml" rel="cms-config-url"> -->
   </head>
   <body>
-    <!-- Decap CMS will mount here automatically -->
+    <!-- Mount point: Decap CMS will append its UI here -->
+    <div id="nc-root"></div>
   </body>
 </html>
