@@ -2,22 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Load Decap CMS from CDN -->
-    <script src="https://unpkg.com/decap-cms@^3.3.0/dist/decap-cms.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
 
-    <!-- Optional: Explicitly init if auto-init fails (rare, but safe) -->
-    <script>
-      // Decap CMS usually auto-inits, but this ensures it waits for DOM
-      document.addEventListener("DOMContentLoaded", function () {
-        if (typeof DecapCMS !== "undefined") {
-          DecapCMS.init();
-        }
-      });
-    </script>
+    <script src="https://unpkg.com/decap-cms@^3.3.0/dist/decap-cms.js"></script>
   </body>
 </html>
