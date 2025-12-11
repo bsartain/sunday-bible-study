@@ -1,25 +1,35 @@
-backend:
-  name: git-gateway
-  branch: main
-  accept_roles:
-    - admin # Only users with the "admin" role in Netlify Identity can log in
+media:
+  input: public/images   # Where uploaded images are saved in your repo
+  output: /images        # Public URL path for images in Next.js
 
-media_folder: "public/images" # Where uploaded images are stored
-public_folder: "/images" # Public URL path for images
-
-collections:
-  - name: "pages"
-    label: "Pages"
+content:
+  - name: pages
+    label: Pages
+    type: collection     # Even for single files, we use a collection for organization
+    path: content        # Folder containing your Markdown files
+    view:
+      fields: [title, date]  # Columns shown in the list view (optional but nice)
     files:
-      - label: "Cats Page"
-        name: "cats"
-        file: "content/cats.md"
+      - name: cats
+        label: Cats Page
+        path: cats.md      # Relative to the collection path (content/cats.md)
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Date", name: "date", widget: "datetime" }
-          - label: "Cats"
-            name: "cats"
-            widget: "list"
+          - name: title
+            label: Title
+            type: string
+          - name: date
+            label: Date
+            type: date
+          - name: cats
+            label: Famous Cats
+            type: list
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - name: name
+                label: Name
+                type: string
+              - name: description
+                label: Description
+                type: text
+          - name: body
+            label: Body Content
+            type: rich-text    # For the main Markdown body below the frontmatter
