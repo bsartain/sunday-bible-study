@@ -1,4 +1,5 @@
 ---
+name: "Apostles Creed"
 title: "Apostles Creed"
 excerpt: ""
 coverImage: ""
