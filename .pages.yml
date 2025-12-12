@@ -1,4 +1,5 @@
 # pages.config.yml (in repo root)
+name: "Sunday Bible Study"
 version: "1.0"
 projectId: your-project-id # Auto-filled after Step 1; check dashboard
 collections:
