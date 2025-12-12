@@ -4,21 +4,42 @@ title: "Apostles Creed"
 excerpt: ""
 coverImage: ""
 date: "2020-03-16T05:35:07.322Z"
+title: Apostles Creed
 order: 1
-show: true
-author:
-  name: Brett Sartain
-  picture: ""
-ogImage:
-  url: ""
 ---
 
-I believe in God, the Father almighty,
-creator of heaven and earth.
-I believe in Jesus Christ, his only Son, our Lord.
-He was conceived by the Holy Spirit
-and born of the Virgin Mary.
-He suffered under Pontius Pilate,
-was crucified, died, and was buried.
-He descended to the dead.
-On the third day he rose again.
+**I believe in God, the Father almighty,**
+
+**creator of heaven and earth.**
+
+**I believe in Jesus Christ, his only Son, our Lord.**
+
+**He was conceived by the Holy Spirit**
+
+**and born of the Virgin Mary.**
+
+**He suffered under Pontius Pilate,**
+
+**was crucified, died, and was buried.**
+
+**He descended to the dead.**
+
+**On the third day he rose again.**
+
+**He ascended into heaven,**
+
+**and is seated at the right hand of the Father.**
+
+**He will come again to judge the living and the dead.**
+
+**I believe in the Holy Spirit,**
+
+**the holy catholic Church,**
+
+**the communion of saints,**
+
+**the forgiveness of sins,**
+
+**the resurrection of the body,**
+
+**and the life everlasting. Amen.**
